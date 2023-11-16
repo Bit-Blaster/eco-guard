@@ -1,3 +1,4 @@
+//Imports:
 import { Stack, HStack, Icon, Text, Image, Heading } from '@chakra-ui/react'
 import React from 'react'
 import { GoHome } from 'react-icons/go'
@@ -53,9 +54,13 @@ const SideNav = () => {
         gap={8}
         padding={7}
         px={4}
-        boxShadow={'2xl'}
+        boxShadow={{
+          base: 'none',
+          lg: '2xl',
+        }}
         m={2}
-        maxW={'230px'}
+        maxW={'245px'}
+        minW={'230px'}
         height={'98vh'}
         borderRadius={30}
       >
@@ -71,7 +76,10 @@ const SideNav = () => {
           <Text>John Doe</Text>
         </HStack>
 
-        <Stack gap={'160px'}>
+        <Stack gap={{
+          base:"10vh",
+          lg:"20vh"
+        }}>
           <Stack gap={10}>
             <Stack gap={3}>
               <Heading
@@ -83,7 +91,7 @@ const SideNav = () => {
               </Heading>
 
               {navLinks.map(nav => (
-                //FIXME: Below is HStack1 this is for Menu items
+//FIXME: Below is HStack1 this is for Menu items
                 <HStack
                   color={'#797E82'}
                   borderRadius={'8px'}
@@ -137,7 +145,7 @@ const SideNav = () => {
           <Stack gap={5}>
             <Image
               alignSelf={'center'}
-              maxWidth={'15vw'}
+              // maxWidth={'10vw'}
               src="../../public/logo.svg"
             />
 

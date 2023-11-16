@@ -1,9 +1,10 @@
+//Imports:
 import React from 'react'
+import DashboardLayout from '../../Components/DashboardLayout'
 
 const Messages = () => {
-  return (
-    <div>Messages</div>
-  )
+    //Return:
+  return <DashboardLayout title={'Messages'}>Messages</DashboardLayout>
 }
-
+//Exports:
 export default Messages
