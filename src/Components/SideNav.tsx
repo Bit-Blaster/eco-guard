@@ -1,6 +1,5 @@
 //Imports:
 import { Stack, HStack, Icon, Text, Image, Heading } from '@chakra-ui/react'
-import React from 'react'
 import { GoHome } from 'react-icons/go'
 import { FaRegEnvelope } from 'react-icons/fa'
 import { MdPersonOutline } from 'react-icons/md'
@@ -63,6 +62,7 @@ const SideNav = () => {
         minW={'230px'}
         height={'98vh'}
         borderRadius={30}
+        bgColor={'white'}
       >
         <HStack justify={'start'} fontWeight={'bold'} gap={5} py={'1'}>
           <Image
@@ -76,10 +76,12 @@ const SideNav = () => {
           <Text>John Doe</Text>
         </HStack>
 
-        <Stack gap={{
-          base:"10vh",
-          lg:"20vh"
-        }}>
+        <Stack
+          gap={{
+            base: '10vh',
+            lg: '20vh',
+          }}
+        >
           <Stack gap={10}>
             <Stack gap={3}>
               <Heading
@@ -91,7 +93,7 @@ const SideNav = () => {
               </Heading>
 
               {navLinks.map(nav => (
-//FIXME: Below is HStack1 this is for Menu items
+                //FIXME: Below is HStack1 this is for Menu items
                 <HStack
                   color={'#797E82'}
                   borderRadius={'8px'}

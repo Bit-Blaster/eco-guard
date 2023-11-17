@@ -12,12 +12,16 @@ import {
   MenuList,
   Switch,
 } from '@chakra-ui/react'
-import React from 'react'
 import { PiBellRingingLight } from 'react-icons/pi'
 import { AiOutlineQuestionCircle } from 'react-icons/ai'
 import { FiMenu } from 'react-icons/fi'
 
-const TopNav = ({ title, onOpen }) => {
+interface TopNavProps {
+  title: string
+  onOpen: () => void
+}
+
+const TopNav: React.FC<TopNavProps> = ({ title, onOpen }) => {
   //Return:
   return (
     <Flex
@@ -47,6 +51,7 @@ const TopNav = ({ title, onOpen }) => {
           base: 'none',
           lg: 'block',
         }}
+        bgColor={'white'}
       />
 
       <HStack justify={'space-between'}>
