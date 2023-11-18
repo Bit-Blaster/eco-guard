@@ -1,5 +1,5 @@
+//Imports:
 import { Stack, HStack, Icon, Text, Image, Heading } from '@chakra-ui/react'
-import React from 'react'
 import { GoHome } from 'react-icons/go'
 import { FaRegEnvelope } from 'react-icons/fa'
 import { MdPersonOutline } from 'react-icons/md'
@@ -53,11 +53,16 @@ const SideNav = () => {
         gap={8}
         padding={7}
         px={4}
-        boxShadow={'2xl'}
+        boxShadow={{
+          base: 'none',
+          lg: '2xl',
+        }}
         m={2}
-        maxW={'230px'}
+        maxW={'245px'}
+        minW={'230px'}
         height={'98vh'}
         borderRadius={30}
+        bgColor={'white'}
       >
         <HStack justify={'start'} fontWeight={'bold'} gap={5} py={'1'}>
           <Image
@@ -71,7 +76,12 @@ const SideNav = () => {
           <Text>John Doe</Text>
         </HStack>
 
-        <Stack gap={'160px'}>
+        <Stack
+          gap={{
+            base: '10vh',
+            lg: '20vh',
+          }}
+        >
           <Stack gap={10}>
             <Stack gap={3}>
               <Heading
@@ -137,7 +147,7 @@ const SideNav = () => {
           <Stack gap={5}>
             <Image
               alignSelf={'center'}
-              maxWidth={'15vw'}
+              // maxWidth={'10vw'}
               src="../../public/logo.svg"
             />
 
