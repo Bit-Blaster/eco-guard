@@ -34,7 +34,7 @@ const WQI = () => {
       >
         <HStack>
           <Icon as={FaWater} />
-          <Text>AQI</Text>
+          <Text>WQI</Text>
         </HStack>
         <Icon as={FaChevronDown} />
       </Button>
