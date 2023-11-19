@@ -7,6 +7,7 @@ import {
   DrawerCloseButton,
 } from '@chakra-ui/react'
 import React from 'react'
+ //Components:
 import SideNav from './SideNav'
 
 const SideDrawer = ({ isOpen, onClose }) => {
@@ -19,7 +20,6 @@ const SideDrawer = ({ isOpen, onClose }) => {
           <DrawerCloseButton />
 
           <DrawerBody>
-{/* //Components: */}
             <SideNav />
           </DrawerBody>
         </DrawerContent>

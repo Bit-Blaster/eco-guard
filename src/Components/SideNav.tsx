@@ -9,7 +9,7 @@ import { TbLogout } from 'react-icons/tb'
 import { FaRobot } from 'react-icons/fa'
 
 const SideNav = () => {
-  //Variables:
+  //Constants:
   const navLinks = [
     //TODO: use react router and do all the routing work! Provide links and use them in HStack1 and HStack2
     {
@@ -46,7 +46,7 @@ const SideNav = () => {
       link: '/',
     },
   ]
-
+//Return:
   return (
     <>
       <Stack
@@ -174,5 +174,5 @@ const SideNav = () => {
     </>
   )
 }
-
+//Exports:
 export default SideNav
